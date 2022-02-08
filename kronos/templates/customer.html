@@ -1,0 +1,213 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block stylesheet %}{% static 'customer.css' %}{% endblock stylesheet %}
+
+{% block title %}index{% endblock title %}
+
+{% block body %}
+
+
+
+
+    <!--Paragraph-->
+    <div class="main1" style="text-align: center;">
+        <p>Have questions? Send Us a Message/Feedback.</p>
+        <p> We'll respond within 24 hours!</p>
+    </div>
+
+    <!--FORM-->
+    <div class="container1"><br>
+        <form style="text-align: center;">
+            <div class="main2" style="margin-left: 50px; margin-right: 50px;">
+
+                <div class="row g-2">
+
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputGrid"
+                                placeholder="name@example.com">
+                            <label for="floatingInputGrid">Enter name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputGrid"
+                                placeholder="name@example.com">
+                            <label for="floatingInputGrid">Email address (name@example.com)</label>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="mb-3">
+                    <div class="form-floating">
+
+                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com"
+                            style="height: 200px;">
+                        <label for="floatingInputGrid">Type your message here</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Send Message Button-->
+            <button type="submit" class="btn  btn-outline-secondary" style="margin: 10px;">
+                Send message
+            </button>
+
+            <!--Reset Form Button-->
+            <button type="reset" class="btn btn-outline-secondary">
+                Reset form
+            </button>
+        </form><br>
+    </div><br><br>
+
+    <!--FAQs Accordian-->
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-left:40px; margin-right: 40px;">
+
+        <p style="font-size:x-large; color: #212121;"><b><i class="far fa-question-circle"></i> Frequently Asked
+                Questions(FAQs)</b></p><br>
+        <div class="container2" style="padding: 30px;"><br>
+            <p><b>BUYING A KRONOS</b></p><br>
+
+            <!--1st-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Where can I purchase a Kronos watch?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">New and genuine Kronos watches are exclusively sold by Official Kronos
+                        Retailers, who warrant the authenticity of your Kronos and ensure its international five-year
+                        guarantee.</div>
+                </div>
+            </div>
+
+            <!--2nd-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How can I ensure the authenticity of a Kronos watch?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Kronos watches should be only purchased from Official Kronos Retailers,
+                        who
+                        are authorized to sell and maintain Kronos watches. With the necessary skill, training, know-how
+                        and
+                        special equipment on site, they guarantee the authenticity of each and every part of your Rolex,
+                        and
+                        can ensure its reliability over time.</div>
+                </div>
+            </div>
+
+            <!--3rd-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        How long is the guarantee of a Kronos watch?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">All new Kronos watches have an international five-year guarantee that
+                        will
+                        be completed and dated by your Official Kronos Retailer at the time of purchase and registered
+                        with
+                        Kronos.</div>
+                </div>
+            </div><br>
+
+            <p><b>CARING FOR YOUR KRONOS</b></p>
+
+            <!--4th-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        How can I look after my Kronos watch?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">You can help preserve its lustre by cleaning it occasionally with a
+                        microfiber cloth. You can also wash the case and bracelet (except leather straps) from time to
+                        time
+                        using soapy water and a soft brush. After wearing your watch in the sea, it is important to
+                        rinse it
+                        with fresh water to remove any salt and sand deposits. Before cleaning your watch, always ensure
+                        that the winding crown is screwed down properly against the case to guarantee waterproofness.
+                    </div>
+                </div>
+            </div>
+
+            <!--5th-->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Does a Kronos resist to extreme conditions like snow or cold?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Kronos watches have proved themselves from the start in the most extreme
+                        conditions imaginable – from the depths of the deepest oceans to the summits of the highest
+                        mountains,
+                        in the air and on the race track. Moreover, to ensure that all Rolex watches can live up to
+                        these
+                        high
+                        expectations, every single one is tested to extremes before it is allowed to leave the Rolex
+                        site.
+                    </div>
+                </div>
+            </div><br>
+
+            <p><b>SERVICING YOUR KRONOS</b></p>
+
+            <!--6th-->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        What does a Kronos servicing consist of?
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">When your watch is serviced by Kronos, the watch is completely
+                        dismantled
+                        and
+                        all of its components are ultrasonically cleaned. Each individual component is closely examined
+                        and
+                        those that no longer meet Kronos's functional and aesthetic specifications are replaced with
+                        genuine
+                        Kronos parts. The movement is carefully lubricated then electronically tested to guarantee its
+                        timing
+                        accuracy; the case and the metal bracelet are meticulously refinished to restore their lustre.
+                        Your
+                        Kronos then undergoes a series of rigorous technical tests and checks to guarantee its
+                        waterproofness,
+                        power reserve and precision. After a complete Kronos service, your watch is covered by a service
+                        guarantee.</div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+    <!--Alert-->
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        REACH OUR TEAM! We love questions and feedback - and we're always happy to help! Your feedback is valuable!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+{% endblock body %} 
+  

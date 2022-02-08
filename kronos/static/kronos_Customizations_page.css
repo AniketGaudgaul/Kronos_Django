@@ -1,0 +1,114 @@
+.navbar{
+    background-color: transparent;
+    z-index: 9;
+}
+.navbar:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+}
+.brand{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  
+    display: block;
+}
+#carouselExampleCaptions{
+    position:absolute;
+  width:100%;
+  margin: 50px;
+  top:0;
+}
+.btn1:hover{
+    color: blueviolet;
+}
+.bg1{
+    background-color: transparent;
+}
+#custom{
+    margin-top: 100rem;
+
+}
+@media screen and (max-width:1500px) {
+    #custom{
+    margin-top: 100rem;
+    }
+}
+@media screen and (max-width:1300px) {
+    #custom{
+    margin-top: 100rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    #custom{
+    margin-top: 35rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    #custom{
+    margin-top: 32rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    #custom{
+    margin-top: 30rem;
+    }
+}
+@media screen and (max-width:800px) {
+    #custom{
+    margin-top: 25rem;
+    }
+}
+@media screen and (max-width:600px) {
+    #custom{
+    margin-top: 20rem;
+    }
+}
+@media screen and (max-width:400px) {
+    #custom{
+    margin-top: 10rem;
+    }
+}
+
+.h2, h2 {
+    text-align: center;
+    font-size: calc(1.325rem + .9vw);
+}
+.h2{
+    font-weight: 500;
+    line-height: 1.2;    
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.share {
+    font-size: large;
+    text-align: center;
+    font-family: Arbutus;
+    background-color: #F7F7F7;
+}
+
+.btn {
+    margin: 7px;
+    border: none;
+    border-radius: 100px;
+    background-color:rgba(240, 182, 106, 0.911) ;
+}
+
+.footer {
+    background-color: #212121;
+    color: white;
+}
+
+.links {
+    text-align: center;
+}

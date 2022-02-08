@@ -1,0 +1,107 @@
+.navbar{
+    background-color: transparent;
+    z-index: 9;
+}
+.navbar:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+
+}
+.brand{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  
+    display: block;
+}
+.btn1:hover{
+    color: blueviolet;
+}
+.bg1{
+    background-color: transparent;
+}
+#myVideo {
+    top: 0;
+    position: absolute;
+    width: 100%;
+  }
+.card{
+    transition:transform .2s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.smort{
+    margin-top: 50rem;
+}
+@media screen and (max-width:1500px) {
+    .smort{
+    margin-top: 48rem;
+    }
+}
+@media screen and (max-width:1360px) {
+    .smort{
+    margin-top: 42rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .smort{
+    margin-top: 37rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    .smort{
+    margin-top: 32rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .smort{
+    margin-top: 30rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .smort{
+    margin-top: 25rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .smort{
+    margin-top: 15rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .smort{
+    margin-top: 10rem;
+    }
+}
+.share {
+    font-size: large;
+    text-align: center;
+    font-family: Arbutus;
+    background-color: #F7F7F7;
+}
+
+.btn {
+    margin: 7px;
+    border: none;
+    border-radius: 100px;
+    background-color:rgba(240, 182, 106, 0.911);
+}
+
+.footer {
+    background-color: #212121;
+    color: white;
+}
+
+.links {
+    text-align: center;
+}
+
+h2{
+    margin: 60px;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background: -webkit-radial-gradient(black,rgba(202, 202, 202, 0.651));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}

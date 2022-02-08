@@ -1,0 +1,54 @@
+.navbar{
+    background-color: transparent;
+}
+.navbar:hover{
+    background-color: rgba(187, 182, 182, 0.582);
+}
+.main1{
+    margin-top: 5rem;
+}
+.brand{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  
+    display: block;
+}
+
+.links {
+    text-align: center;
+}
+
+.container1,.container2{
+    background: rgba(105, 127, 199, 0.15);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.0px );
+-webkit-backdrop-filter: blur( 4.0px );
+border-radius: 3rem;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+margin-right: 35px;
+    margin-left: 35px;
+}
+.form-control{
+    border-radius: 1rem;
+background: #e2e6eea8;
+box-shadow: inset 10px 10px 18px #b5b5b557,
+            inset -10px -10px 18px #ffffff;
+}
+.btn {
+    margin: 7px;
+    border: none;
+    border-radius: 100px;
+    background-color:rgba(240, 182, 106, 0.911) ;
+}
+
+.footer {
+    background-color: #212121;
+    color: white;
+}
+
+.share {
+    font-size: large;
+    text-align: center;
+    font-family: Arbutus;
+    background-color: #F7F7F7;
+}

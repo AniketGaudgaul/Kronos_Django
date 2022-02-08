@@ -1,0 +1,90 @@
+.navbar{
+    background-color: transparent;
+    z-index: 9;
+}
+.navbar:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+}
+.brand{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  
+    display: block;
+}
+#carouselExampleCaptions{
+    position:absolute;
+    width:100%;
+    top:0;
+}
+.btn1:hover{
+    color: blueviolet;
+}
+.bg1{
+    background-color: transparent;
+}
+
+.descandfeat{
+    margin-top: 35rem;
+}
+@media screen and (max-width:1500px) {
+    .descandfeat{
+    margin-top: 45rem;
+    }
+}
+@media screen and (max-width:1300px) {
+    .descandfeat{
+    margin-top: 40rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .descandfeat{
+    margin-top: 35rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    .descandfeat{
+    margin-top: 32rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .descandfeat{
+    margin-top: 30rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .descandfeat{
+    margin-top: 25rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .descandfeat{
+    margin-top: 20rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .descandfeat{
+    margin-top: 10rem;
+    }
+}
+.share {
+    font-size: large;
+    text-align: center;
+    font-family: Arbutus;
+    background-color: #F7F7F7;
+}
+
+.btn {
+    margin: 7px;
+    border: none;
+    border-radius: 100px;
+    background-color:rgba(240, 182, 106, 0.911) ;
+}
+
+.footer {
+    background-color: #212121;
+    color: white;
+}
+
+.links {
+    text-align: center;
+}

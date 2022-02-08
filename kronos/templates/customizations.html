@@ -1,0 +1,301 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+{% block stylesheet %}{% static 'customisations.css' %}{% endblock stylesheet %}
+
+{% block title %}Customizations{% endblock title %}
+
+{% block body %}
+
+
+    
+    
+    
+
+
+
+
+
+
+    <!--Carousel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" title="Carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'carousel1.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'carousel2.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'carousel3.jpg' %}" style="background-image: cover;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'carousel4.jpg' %}" style="background-image: cover;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'carousel5.jpg' %}" style="background-image: cover;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'carousel6.jpg' %}" style="background-image: cover;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'carousel7.jpg' %}" style="background-image: cover;" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+
+        <h2 class="pb-2 border-bottom" style='50px, bold, !important' id="custom">Customizations</h2>
+
+        <div class="container">
+
+            <!--CUSTOMIZATION 1-->
+            <div class="container px-4 py-5 row featurette d-flex justify-content-center align-items-center my-5"
+                id="hanging-icons">
+
+                <div class="col-md-8">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">HEALTH UTILITY</strong>
+                            <p class="card-text mb-auto">Health is of utmost importance to everyone. We offer various
+                                Health Utilities like a pulse monitor, blood pressure meter, pedometer, an ECG, an
+                                oximeter (which is quite handy these days) and much more. <br>Women can track of their
+                                periods cycle and get a reminder for their next due date. <br>The health utility also
+                                detects a heart attack, low sugar, fatigue and when a user falls unconscious. In case of
+                                such incidents, the watch will immediately contact a nearby hospital and arrange an
+                                ambulance.<br><strong>'TIME'</strong> is crucial in such cases.
+                            </p>
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="{% static 'Health.png' %}" alt="Health Watch"
+                                style="padding: 15px; margin-top: 40px; margin-right: 10px;">
+                            <svg class="bd-placeholder" width="200" height="10" xmlns="Images\Health.png" role="img"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                                <title>Placeholder</title>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CUSTOMIZATION 2-->
+            <div class="container px-4 py-5 row featurette d-flex justify-content-center align-items-center my-5"
+                id="hanging-icons">
+                <div class="col-md-8">
+                    <div
+                        class="row bg-grey g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="{% static 'Smart.jpg' %}" alt="Smart" style="padding: 15px; margin-top: 20px;">
+                            <svg class="bd-placeholder-img" width="200" height="10" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+
+                            </svg>
+                        </div>
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">OS UTILITY</strong>
+                            <p class="card-text mb-auto">A sleep app allows you to set a bedtime routine by tracking
+                                your sleeping trends and gives you personalized goals to achieve and maintain good
+                                health. <br>Leave your phone behind. Use untethered GPS to track your run’s distance
+                                (and play your stored music) on your watch.<br>Thanks to its new design, you can access
+                                your information faster, get proactive help from Google Assistant and access smarter
+                                health coaching. All with a swipe of your finger.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CUSTOMIZATION 3-->
+            <div class="container px-4 py-5 row featurette d-flex justify-content-center align-items-center my-5"
+                id="hanging-icons">
+                <div class="col-md-8">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">BUSINESS UTILITY</strong>
+                            <p class="card-text mb-auto">Business entities can select the office customization which
+                                will link all the team members and send notifications or reminders of a meeting. <br>The
+                                'main employer' can even see the progress of the employees in the form of stats. Users
+                                can keep track of their next flight and keep tabs on their deadlines which is quite
+                                handy.<br> The Office customization offers a lot of utilities which makes going to the
+                                office fun.</p>
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="{% static 'Business.jpg' %}" alt="Business">
+                            <svg class="bd-placeholder-img" width="200" height="10" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Selecting customisations-->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+        <section class="text-gray-600 body-font">
+            <div class="container my-20 px-5 py-24 mx-auto flex flex-wrap d-flex justify-content-center "
+                style="background-color: rgb(241, 241, 241);border-radius: 15px; box-shadow:10px 10px 10px 10px;">
+
+                <center>
+
+                    <h1 class="border-bottom pb-2" style="font-size:50px; margin-bottom:60px ; color:black">Customise
+                        your watch</h1>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-black inline-flex items-center justify-center text-white relative z-10">
+
+                            <i class="fas fa-running" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Fitness Tracker</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left; ">You can
+                                set your routine with the fitness features by choosing from various activities, say
+                                running, swimming, yoga, cycling, cardio, etc. It measures and tracks all your moves.
+                            </p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="ft" onclick="add1()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-heartbeat" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Health Care</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;"> Stay
+                                healthy with Kronos™. Track your progress with activity goals using various apps
+                                configured with a Kronos watch such as <br> heart-rate monitor, emergency SOS, fall
+                                detection, blood oxygen sensor, ECG report, untethered GPS etc. </p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="hc" onclick="add2()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-yellow-400 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-business-time" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Schedule module</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;">Features
+                                which let you stay on track. Gives you reminders or audible alerts when it is time to
+                                leave for an appointment, take your medicine or notify you about an incoming text
+                                message.</p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="sm" onclick="add3()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-fingerprint" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Biometric Authentication</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;">Biometric
+                                Authentication with smartwatch provides not only an instant mechanism of authentication
+                                but at the same time more secure too.</p>
+
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="ba" onclick="add4()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative">
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-indigo-600 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-microphone" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Voice Assistant</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;">Get
+                                proactive help from Voice Assistant while you're on the go. Whether you need to initiate
+                                a workout, check the weather for the day or get quick answers.</p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="va" onclick="add5()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <!--Display-->
+                    <div class="container">
+                        <h2 style="font-size:40px; margin:30px ; color:black">Features Selected</h2>
+                        <p id="display"
+                            style="background-color: white; margin: 30px;padding-bottom: 20px; font-size: 30px; padding-bottom: 50px;">
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary" id="submit" onclick="reset()">View Cart</button>
+                    <button class="btn btn-primary" id="reset" onclick="reset()">Reset</button>
+                </center>
+            </div>
+        </section>
+    </div>
+
+    <script src="{% static 'Customizations.js' %}"></script>
+{% endblock body %}
