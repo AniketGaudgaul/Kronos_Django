@@ -1,13 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from . models import Contact
+from . models import Contact, Product
 # Create your views here.
 
 def index(request):
+   
     return render(request, 'index.html')
 
 def watches(request):
-    return render(request, 'watches.html')
+    allProds = Product.objects.all()
+    print(allProds)
+    params = {'allProds':allProds}
+
+    return render(request, 'watches.html', params)
 
 def customizations(request):
     return render(request, 'customizations.html')
