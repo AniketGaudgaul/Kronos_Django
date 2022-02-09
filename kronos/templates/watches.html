@@ -41,16 +41,18 @@
                                     <div class="group">
                                         <p class="card-text">
                                             
-                                        <h5>{{k}}</h5>{{k.tagline}}</p>
+                                        <h5 id="{{k}}">{{k}}</h5>{{k.tagline}}</p>
                                     </div>
                                     <div>
-                                        <b><p style="font-size: 25px; padding-top: 12px;">{{k.price}}$</p></b>
+                                        <b><span style="font-size: 25px; padding-top: 12px;" id="{{k}}price">{{k.price}}</span>$</b>
 
                                     </div>
                                     <div>
-                                        <a href="#">
+                                        <span id="divpr{{k}}" class="divpr" >
+                                        <a href="#" id="{{k}}" class="cart">
                                             <i class="fa fa-duotone fa-cart-plus"
                                                 style="font-size:2rem; align-items: flex-end; color: black;"></i></a>
+                                        </span>
                                     </div>
 
                                 </div>
@@ -82,3 +84,50 @@
 <script src="{% static 'watches.js' %}" ></script>
 
 {% endblock body %} 
+
+{% block js %}
+<script>
+if (localStorage.getItem('cart') == null) {
+    var cart = {};
+} 
+else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    updateCart(cart);
+
+
+    
+}
+// If the add to cart button is clicked, add/increment the item
+//$('.cart').click(function() {
+$('.divpr').on('click', 'a.cart', function() {
+    var idstr = this.id.toString();
+    if (cart[idstr] != undefined) {
+        qty = cart[idstr][0] + 1;
+        cart[idstr][0] = qty
+
+    } else {
+        qty = 1;
+        name = document.getElementById(idstr).innerHTML
+        price = document.getElementById(idstr+'price').innerHTML
+        cart[idstr] = [qty, name, parseInt(price)];
+
+    }
+    updateCart(cart);
+
+    
+    alert("Item successfully added to your cart!")
+   
+});
+
+function updateCart(cart) {
+    var sum = 0;
+    for (var item in cart) {
+        sum = sum + cart[item][0];
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML = sum;
+    console.log(cart);
+}
+</script>
+
+{%endblock%}

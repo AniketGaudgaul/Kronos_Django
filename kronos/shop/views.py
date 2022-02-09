@@ -4,12 +4,15 @@ from . models import Contact, Product
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
+import json
 
 # Create your views here.
 
 def index(request):
-   
-    return render(request, 'index.html')
+    messages.success(request, "okay")
+    return render(request, 'index.html',{
+            'messages': messages.get_messages(request)
+        })
 
 def watches(request):
     allProds = []
@@ -88,4 +91,8 @@ def logoutUser(request):
     logout(request)
     print("Logged out")
     return redirect('ShopHome')
+
+
+def checkout(request):
+    return render(request,'checkout.html')    
 

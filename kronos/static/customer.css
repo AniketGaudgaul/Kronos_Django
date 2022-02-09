@@ -13,6 +13,10 @@
     margin-left: -50px !important;  
     display: block;
 }
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
 
 .links {
     text-align: center;

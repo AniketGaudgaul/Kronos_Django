@@ -16,6 +16,10 @@
     width:100%;
     top:0;
 }
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
 .btn1:hover{
     color: blueviolet;
 }
